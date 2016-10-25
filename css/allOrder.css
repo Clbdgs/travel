@@ -1,0 +1,47 @@
+.tips{
+    text-align: center;
+}
+
+
+#allOrder-list ion-item{
+    position: relative;
+}
+#allOrder-list ion-item:before{
+    position: absolute;
+    left: 5%;
+    bottom: 1px;
+    content: '';
+    height: 1px;
+    width:95%;
+    background-color: #eeeeee;
+}
+#allOrder-list .list{
+    margin-top: 40px;
+}
+#allOrder-list .icon{
+    font-size: 20px;
+}
+#allOrder-list p{
+    display: inline-block;
+    font-size: 12px;
+}
+#myOrder span{
+    padding-left: 10px;
+    font-weight: bold;
+}
+#myOrder .item-content{
+    background-color: #F1F0F0;
+}
+#myOrder .list{
+    position: relative;
+
+}
+#myOrder .list:before{
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    content: '';
+    height: 1px;
+    width:100%;
+    background-color: #eeeeee;
+}

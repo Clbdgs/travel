@@ -1,0 +1,30 @@
+<ion-view view-title="find" id="page2" class=" " >
+
+    <ion-content class=" has-footer  " id="find-content"  delegate-handle="mainScroll">
+        <ion-refresher pulling-text="松开可以刷新" pulling-icon="icon ion-load-a"
+         on-refresh="loadMore()">
+        </ion-refresher>
+
+        <div class="list card " ng-repeat="city in cities"  >
+
+            <div class="item item-image">
+                <img ng-src='{{city.img_url}}'>
+            </div>
+            <div class="item  " id="find-list-item46">
+                <h2>{{city.desc_h}}</h2>
+                  <p>{{city.desc_p}}</p>
+            </div>
+        </div>
+
+         <!--下拉刷新-->
+        <ion-infinite-scroll on-infinite="getCities()"
+                            ng-if="page<total"
+                             distance="1%"
+                           immediate-check="false">
+
+        </ion-infinite-scroll>
+    </ion-content>
+
+
+
+</ion-view>

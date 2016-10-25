@@ -1,0 +1,92 @@
+<ion-view>
+    <ion-list id="myOrder">
+        <ion-item class="icon-left" ui-sref="tabs.mine" >
+            <i class="icon ion-ios-arrow-back assertive"></i>
+             <span>我的订单</span>
+        </ion-item>
+     </ion-list>
+    <ion-tabs class="tabs-top tabs-striped  ">
+        <ion-tab title="全部" ui-sref="allOrder.index">
+            <ion-nav-view name="allOrder-index">
+                <ion-view>
+                        <ion-list id="allOrder-list">
+                            <ion-item class="item-icon-right">
+                                <p>国内酒店订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                            <ion-item class="item-icon-right">
+                                <p>国际酒店订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                            <ion-item class="item-icon-right">
+                                <p> 团购订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                            <ion-item class="item-icon-right">
+                                <p>  国内机票订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                            <ion-item class="item-icon-right">
+                                <p>  国际机票订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                            <ion-item class="item-icon-right">
+                                <p> 火车票订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                            <ion-item class="item-icon-right">
+                                <p> 汽车票订单</p>
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </ion-item>
+                        </ion-list>
+
+                </ion-view>
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="待付款" ui-sref="allOrder.unpaid">
+            <ion-nav-view name="allOrder-unpaid">
+                <ion-view>
+
+                    <ion-content>
+                        <div class="tips">
+                            <p>目前没有相关订单</p>
+                            <button class="button button-outline button-assertive">预定酒店</button>
+                        </div>
+                    </ion-content>
+                </ion-view>
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="未出行" ui-sref="allOrder.notGo">
+            <ion-nav-view name="allOrder-notGo">
+                <ion-view>
+
+                    <ion-content>
+                        <div class="tips">
+                            <p>目前没有相关订单</p>
+                            <button class="button button-outline button-assertive">预定酒店</button>
+                        </div>
+                    </ion-content>
+
+                </ion-view>
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="领取返现" ui-sref="allOrder.saleOff" >
+            <ion-nav-view name="allOrder-saleOff">
+                <ion-view>
+                 <ion-content>
+                     <div class="tips">
+                         <p>目前没有相关订单</p>
+                         <button class="button button-outline button-assertive">预定酒店</button>
+                     </div>
+                 </ion-content>
+
+
+
+                </ion-view>
+            </ion-nav-view>
+        </ion-tab>
+     <!--   <ion-tab title="可取消" >
+            <ion-nav-view name="tab-cancel"></ion-nav-view>
+        </ion-tab>-->
+    </ion-tabs>
+</ion-view>

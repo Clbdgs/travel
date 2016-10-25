@@ -1,0 +1,29 @@
+<ion-tabs  class="tabs-light tabs-icon-top">
+    <ion-tab title="首页" ui-sref="tabs.index" icon-on="ion-home assertive" icon-off="ion-home">
+   <!--     <ion-nav-bar>
+        <i class="ion-ios-telephone"></i>
+    </ion-nav-bar>-->
+        <ion-nav-view name="tab-index" ></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="发现" ui-sref="tabs.find" icon-on="ion-ios-eye   assertive" icon-off="  ion-ios-eye-outline" >
+      <!--  <div class="category-btn">
+            <button class="button button-light icon ion-android-arrow-dropdown icon-right button-small"
+                    id="noScroll-btn"
+                    ng-click="show()"
+            >类别选择</button>
+        </div>-->
+        <ion-nav-view name="tab-find" ></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="客服" ui-sref="tabs.server" icon-on="ion-ios-telephone   assertive" icon-off="ion-ios-telephone-outline">
+
+        <ion-nav-view name="tab-server" ></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="我的" ui-sref="tabs.mine" icon-on="ion-ios-person  assertive" icon-off=" ion-ios-person-outline">
+        <ion-nav-view name="tab-mine" ></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
+
+
